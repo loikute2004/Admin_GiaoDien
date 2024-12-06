@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+    <div class="flex">
+        <nav class="p-4 w-[17rem] bg-blue-100" style="min-height: 100vh;">
+            <h3 class="text-2xl text-blue-600 font-medium"><i class="fa-solid fa-house"></i> Admin</h3>
+            <div class="mt-2">
+                <h4 class="text-gray-500 text-lg mb-2">MENU</h4>
+                <ul class="flex flex-col gap-1">
+                    <li class="px-4 py-2 text-blue-600 rounded bg-blue-200">
+                        <i class="fa-solid fa-house text-blue-600"></i>
+                        DashBoard
+                    </li>
+                    <li class="px-4 py-2 rounded">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Quản lí vé
+                    </li>
+                    <li class="px-4 py-2 rounded">
+                        <i class="fa-solid fa-heart"></i>
+                        Manage Menu
+                    </li>
+                    <li class="px-4 py-2 rounded    ">
+                        <i class="fa-solid fa-user"></i>
+                        Customer Review
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-6">
+                <h4 class="text-gray-500 text-lg mb-2">OTHERS</h4>
+                <ul class="flex flex-col gap-1">
+                    <li class="px-4 py-2 text-blue-600 rounded bg-blue-200">
+                        <i class="fa-solid fa-gear"></i>
+                        Settings
+                    </li>
+                    <li class="px-4 py-2 rounded">
+                        <i class="fa-solid fa-bars"></i>
+                        Payment
+                    </li>
+                    <li class="px-4 py-2 rounded">
+                        <i class="fa-solid fa-user"></i>
+                        Accounts
+                    </li>
+                    <li class="px-4 py-2 rounded    ">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Help
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="bg-black p-4 flex-1">
+            <div class="bg-white rounded-lg flex" style="min-height: 100vh;">
+                <div class="w-2/3 p-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-medium text-2xl">Quản lí vé</h3>
+                        <button class="bg-blue-500 text-white px-10 py-2 rounded-lg mt-3">Thêm vé mới</button>
+                    </div>
+                    <form action="" class="mt-8">
+                        <div class="sm:col-span-4 flex items-center">
+                            <label for="email" class="block text-sm/6 font-medium text-gray-900 w-[10rem]">Email address</label>
+                            <div class="mt-2 flex-1">
+                              <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-3 flex items-center mt-4">
+                            <label for="country" class="block text-sm/6 font-medium text-gray-900 w-[10rem]">Country</label>
+                            <div class="mt-2 grid grid-cols-1 flex-1">
+                              <select id="country" name="country" autocomplete="country-name" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                                <option>United States</option>
+                                <option>Canada</option>
+                                <option>Mexico</option>
+                              </select>
+                              <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                              </svg>
+                            </div>
+                          </div>
+                        <div class="sm:col-span-4 flex items-center mt-4">
+                            <label for="email" class="block text-sm/6 font-medium text-gray-900 w-[10rem]">Email address</label>
+                            <div class="mt-2 flex-1">
+                                <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                            </div>
+                        </div>
+                        <div class="col-span-full flex items-center mt-4">
+                            <label for="about" class="block text-sm/6 font-medium text-gray-900 w-[10rem]">About</label>
+                            <div class="mt-2 flex-1">
+                              <textarea name="about" id="about" rows="3" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"></textarea>
+                            </div>
+                        </div>
+                        <div class="sm:col-span-4 flex items-center mt-4">
+                            <label for="email" class="block text-sm/6 font-medium text-gray-900 w-[10rem]">Email address</label>
+                            <div class="mt-2 flex-1">
+                                <input id="email" name="email" type="file" autocomplete="email" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                            </div>
+                        </div>
+                        <div class="text-center mt-10"><button class="text-white font-medium text-lg bg-blue-600 px-10 w-[10rem] mt-10 py-1 rounded">Luu</button></div>
+                    </form>
+                </div>
+                <div class="bg-gray-100 px-10 py-6 flex-1 rounded-tr-lg rounded-br-lg">
+                    <h3 class="text-black font-medium text-2xl mt-10 mb-14">Where your money go?</h3>
+                    <div>
+                        <div class="py-2">
+                            <div class="flex justify-between">
+                                <span class="font-medium text-mg">Da Nang</span>
+                                <span>872.400</span>
+                            </div>
+                            <div class="bg-gray-200 h-[3px] w-full rounded-lg relative  mt-2">
+                                <span class="absolute top-0 left-0 w-[4rem] h-[3px] bg-blue-500 rounded-lg inline-block"></span>
+                            </div>
+                        </div>
+                        <div class="py-2">
+                            <div class="flex justify-between">
+                                <span class="font-medium text-mg">Đà Nẵng</span>
+                                <span>872.400</span>
+                            </div>
+                            <div class="bg-gray-200 h-[3px] w-full rounded-lg relative  mt-2">
+                                <span class="absolute top-0 left-0 w-[6rem] h-[3px] bg-blue-500 rounded-lg inline-block"></span>
+                            </div>
+                        </div>
+                        <div class="py-2">
+                            <div class="flex justify-between">
+                                <span class="font-medium text-mg">Phú Quốc</span>
+                                <span>1.378.200</span>
+                            </div>
+                            <div class="bg-gray-200 h-[3px] w-full rounded-lg relative  mt-2">
+                                <span class="absolute top-0 left-0 w-[2rem] h-[3px] bg-blue-500 rounded-lg inline-block"></span>
+                            </div>
+                        </div>
+                        <div class="py-2">
+                            <div class="flex justify-between">
+                                <span class="font-medium text-mg">Hà Nội</span>
+                                <span>928.500</span>
+                            </div>
+                            <div class="bg-gray-200 h-[3px] w-full rounded-lg relative  mt-2">
+                                <span class="absolute top-0 left-0 w-[8rem] h-[3px] bg-blue-500 rounded-lg inline-block"></span>
+                            </div>
+                        </div>
+                        <div class="py-2">
+                            <div class="flex justify-between">
+                                <span class="font-medium text-mg">Đà Lạt</span>
+                                <span>420.700</span>
+                            </div>
+                            <div class="bg-gray-200 h-[3px] w-full rounded-lg relative  mt-2">
+                                <span class="absolute top-0 left-0 w-[4rem] h-[3px] bg-blue-500 rounded-lg inline-block"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
